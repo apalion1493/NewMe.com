@@ -955,6 +955,33 @@
   z-index: 2;
 }
 
+@-moz-document url-prefix() {
+  .main-header,
+  .model-selection-section,
+  .main-header__chief-title {
+    background: #01072a;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .main-header,
+  .model-selection-section,
+  .main-header__chief-title {
+    background: #111634;
+  }
+}
+
+//.main-header,
+//.model-selection-section{
+//  background: #01072a;
+//  //background: #111634;
+//}
+//
+//.main-header__chief-title {
+//  background: #01072a;
+//  //background: #111634;
+//}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
 
