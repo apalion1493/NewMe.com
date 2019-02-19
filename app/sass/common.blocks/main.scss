@@ -1178,7 +1178,7 @@
     }
   }
 
-  @media (max-height: 753.98px) {
+  @media (max-height: 719.98px) {
     .main-header__animation-human {
       position: absolute;
       right: -180px;
@@ -1193,10 +1193,39 @@
     }
   }
 
-  @media (min-height: 754px) {
+  @media (min-height: 720px) {
     .absolute-height {
       height: 100vh;
     }
+
+    .main-header__animation-human video {
+      max-width: 70%;
+      height: auto;
+      margin-left: auto;
+      display: block;
+    }
+
+    .main-header__chief-title {
+      margin-top: 50px;
+    }
+
+    .model-selection-section h3 {
+      padding-top: 20px;
+    }
+
+    .people-bg__second {
+      top: -50px;
+      left: -190px;
+    }
+
+    .people-bg__three video {
+      max-width: 74%;
+    }
+
+
+  }
+
+  @media (min-height: 754px) {
 
     .people-bg-col {
       position: inherit !important;
