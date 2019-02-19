@@ -1,0 +1,420 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.container-fluid.pers-acc.pers-acc-profile {
+  height: 100%;
+}
+
+.pers-acc-profile__training-title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+
+  p {
+    margin-bottom: 0;
+    margin-left: 16px;
+    font-size: 16px;
+    padding: 5px 7px;
+    background: #7ED321;
+    border-radius: 4px;
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+
+.pers-acc-profile__form {
+  input[type="text"]::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  input[type="text"]::-moz-placeholder {
+    color: #ffffff;
+  }
+
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+  input {
+    height: 56px;
+    background: #3D4562;
+    border: 1px solid #9EA2B0;
+    color: #fff;
+    width: 100%;
+
+    &:hover {
+      border-color: #29ABFF;
+    }
+  }
+
+  .form-group {
+    position: relative;
+    height: 58px;
+    margin-bottom: 50px;
+  }
+
+  .form-group__weightForm1:after,
+  .form-group__weightForm1.input-text:after {
+    content: 'Вес';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 30px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__growthForm1:after,
+  .form-group__growthForm1.input-text:after {
+    content: 'Рост';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 35px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__widthMinForm1:after,
+  .form-group__widthMinForm1.input-text:after {
+    content: 'Талия';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 45px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__widthMaxForm1:after,
+  .form-group__widthMaxForm1.input-text:after {
+    content: 'Живот';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 45px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__sizeMaxButtocksForm1:after,
+  .form-group__sizeMaxButtocksForm1.input-text:after {
+    content: 'Ягодицы';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 60px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__sizeUnderButtocksForm1:after,
+  .form-group__sizeUnderButtocksForm1.input-text:after {
+    content: 'Под ягодицами';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 95px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__leftHipForm1:after,
+  .form-group__leftHipForm1.input-text:after {
+    content: 'Бедро левое';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 80px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .form-group__rightHipForm1:after,
+  .form-group__rightHipForm1.input-text:after {
+    content: 'Бедро правое';
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+    width: 87px;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  input:focus {
+    background: #3D4562;
+    color: #fff;
+    border-color: #29ABFF;
+    box-shadow: none;
+  }
+}
+
+.form-group__span {
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+}
+
+.form-group {
+
+  &.form-group__widthMinForm1:before {
+    position: absolute;
+    content: 'В самом узком месте';
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    top: 61px;
+    left: 10px;
+  }
+
+  &.form-group__widthMaxForm1:before {
+    position: absolute;
+    content: 'В самом широком месте';
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    top: 61px;
+    left: 10px;
+  }
+
+  &.form-group__sizeMaxButtocksForm1:before {
+    position: absolute;
+    content: 'По наиболее выступающей точке';
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    top: 61px;
+    left: 10px;
+  }
+
+  &.form-group__leftHipForm1:before {
+    position: absolute;
+    content: 'Нога на возвышении, угол 90°, в самом широком месте 5-7 см от паховой области';
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+    top: 61px;
+    left: 10px;
+  }
+
+}
+
+.form-group__error-block {
+  input, input:hover, input:focus  {
+    border-color: #FF2976;
+    color: #FF2976;
+  }
+  
+  &:after {
+    color: #FF2976 !important;
+  }
+
+  &:before {
+    display: none !important;
+  }
+}
+
+.form-group__error-block .form-group__error-text {
+  font-size: 14px;
+  color: #FF2976;
+}
+
+.pers-acc-profile__photo-section {
+  p {
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+
+.pers-acc-profile__photo-container {
+  position: relative;
+  height: 370px;
+  width: 100%;
+}
+
+.pers-acc-profile__photo-container:hover {
+
+  .pers-acc-profile__photo-blocking {
+    display: flex;
+    border-radius: 16px;
+  }
+}
+
+.pers-acc-profile__photo-blocking {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+
+
+  span {
+    color: rgba(51, 59, 90, 0.8);
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  button {
+    width: 100%;
+    height: 56px;
+  }
+}
+
+.pers-acc-profile .form-group__input:disabled {
+  background: #3D4562;
+  border-color: #3D4562;
+}
+
+
+.form-group.form-group__disabled {
+  background: transparent;
+
+  &:before {
+    display: none;
+  }
+}
+
+.pers-acc-profile__photo-section-block {
+  max-width: 204px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pers-acc-profile__photo-container img {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.pers-acc-profile .pers-acc-profile__btn {
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #2D89F8;
+  color: #2D89F8;
+
+  &:hover {
+    color: #2D89F8;
+  }
+}
+
+.pers-acc-profile__photo-container-new {
+  .pers-acc-profile__photo-blocking {
+    display: flex !important;
+  }
+}
+
+.pers-acc-profile__photo-container-blocked {
+  position: relative;
+
+  &:hover {
+    .pers-acc-profile__photo-blocking {
+      display: none;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 99;
+    border-radius: 16px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .pers-acc-profile__form input {
+    height: 54px;
+    width: 99.2%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pers-acc-profile__form input {
+    width: 99.6%;
+  }
+}
+
+@media (max-width: 426px) {
+  .pers-acc-profile__training-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pers-acc-profile__prompt-green {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .pers-acc-profile__form input {
+    width: 99.4%;
+  }
+}
+
+.form-group:after {
+  opacity: 0;
+}
+
+.form-group.active:after {
+  opacity: 1;
+}

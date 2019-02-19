@@ -1,0 +1,715 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.pers-acc__main.pers-acc-nutrition__main {
+  padding-bottom: 65px;
+}
+
+.container-fluid.pers-acc.pers-acc-nutrition {
+  height: 100%;
+}
+
+.toggle-button-cover {
+  position: relative;
+}
+
+.button-cover, .knobs, .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 288px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.button.b2 {
+  border-radius: 24px;
+  border: 0.1px solid #2F4DAC;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #2F4DAC;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-10 .knobs:before,
+#button-10 .knobs:after,
+#button-10 .knobs span {
+  position: absolute;
+  top: 0;
+  width: 134px;
+  height: 48px;
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 24px;
+  transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+  content: '';
+  left: -2px;
+  background-color: #2A5EFE;
+}
+
+#button-10 .knobs:after {
+  content: 'Список покупок';
+  right: 0;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-10 .knobs span {
+  color: #fff;
+  z-index: 1;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+#button-10 .checkbox:checked + .knobs:before {
+  left: 154px;
+  background-color: #2A5EFE;
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+  color: #fff;
+  font-weight: bold;
+}
+
+#button-10 .checkbox:checked ~ .layer {
+  background-color: #2F4DAC;
+}
+
+.pers-acc-nutrition__switch .button {
+  margin-left: auto;
+}
+
+.pers-acc-nutrition__main-container {
+  position: relative;
+  display: flex;
+}
+
+.pers-acc-nutrition-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pers-acc-nutrition__switch {
+  width: 288px;
+  height: 48px;
+}
+
+.pers-acc-nutrition-navigation__btn {
+  min-width: 48px;
+  height: 48px;
+  background: #2a5efe;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.pers-acc-nutrition-navigation__btn-left {
+  margin-right: 24px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    background: url("../img/pers-acc/pers-acc-nutrition/arrow_back_ios.svg") no-repeat center;
+    background-size: 100% auto;
+  }
+}
+
+.pers-acc-nutrition-navigation__btn-right {
+  margin-left: 24px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    background: url("../img/pers-acc/pers-acc-nutrition/arrow_back_ios.svg") no-repeat center;
+    background-size: 100% auto;
+    transform: rotate(180deg);
+  }
+}
+
+.pers-acc-nutrition-navigation__text-date {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pers-acc-nutrition__table {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff !important;
+  border-radius: 16px;
+  margin-left: 8px;
+  border-collapse: separate;
+  border-spacing: 8px 8px;
+  margin-bottom: 0 !important;
+  box-shadow: 0 4px 5px 0 rgba(11, 0, 43, 0.2), 0 3px 14px 3px rgba(11, 0, 43, 0.12), 0 8px 10px 1px rgba(11, 0, 43, 0.14);
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    right: -86px;
+    z-index: 0;
+    background: #ffffff;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  th {
+    span {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+
+      &:first-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  td {
+    height: 101px;
+    border-radius: 16px;
+    position: relative;
+    padding-bottom: 0;
+    padding-left: 5px !important;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background: rgba(42, 94, 254, 0.22);
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
+
+.pers-acc-nutrition__table-td-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pers-acc-nutrition__edit {
+  background: url("../img/pers-acc/pers-acc-nutrition/pers-acc-nutrition__edit.svg") no-repeat center;
+  background-size: 100% auto;
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.pers-acc-nutrition__table-td-container.pers-acc-nutrition__total-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pers-acc-nutrition__total-stats__block {
+  width: 100%;
+  height: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.pers-acc-nutrition__total-stats-calories {
+  background: #2A5EFE;
+}
+
+.pers-acc-nutrition__total-stats-protein {
+  background: #6407CE;
+}
+
+.pers-acc-nutrition__total-stats-fats {
+  background: #e94295;
+}
+
+.pers-acc-nutrition__total-stats-carbohydrates {
+  background: #7ed321;
+}
+
+.pers-acc-nutrition__statistic td:hover {
+  background: inherit;
+}
+
+.table-nutrition-accordion {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  margin-left: auto;
+  max-height: 753px;
+  height: 100%;
+  background: #ffffff;
+
+  border-radius: 16px;
+  box-shadow: 0 4px 5px 0 rgba(11, 0, 43, 0.2), 0 3px 14px 3px rgba(11, 0, 43, 0.12), 0 8px 10px 1px rgba(11, 0, 43, 0.14);
+}
+
+.pers-acc-nutrition__title-name-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  color: #ffffff;
+  min-width: 75px;
+  font-size: 14px;
+}
+
+.pers-acc-nutrition__title-name-column-breakfast {
+  margin-top: 80px;
+}
+
+.pers-acc-nutrition__title-name-column-first-snack {
+  margin-top: 85px;
+}
+
+.pers-acc-nutrition__title-name-column-lunch {
+  margin-top: 90px;
+}
+
+.pers-acc-nutrition__title-name-column-second-snack {
+  margin-top: 90px;
+}
+
+.pers-acc-nutrition__title-name-column-dinner {
+  margin-top: 90px;
+}
+
+.pers-acc-nutrition__title-name-column-statistic {
+  margin-top: 95px;
+}
+
+.table-nutrition-accordion img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.table-nutrition-accordion__recipe-block {
+  max-width: 271px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 17px;
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.table-nutrition-accordion__info-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-nutrition-accordion__recipe-text {
+  margin-bottom: 115px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.table-nutrition-accordion__info-block {
+  height: 32px;
+  width: 100%;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.table-nutrition-accordion__info-block-calories {
+  background: #2A5EFE;
+}
+
+.table-nutrition-accordion__info-block-protein {
+  background: #6407CE;
+}
+
+.table-nutrition-accordion__info-block-fats {
+  background: #E94295;
+}
+
+.table-nutrition-accordion__info-block-carbohydrates {
+  background: #7ED321;
+}
+
+.table-nutrition-accordion__card {
+  border-radius: 16px !important;
+  border: none !important;
+  overflow: auto;
+
+  .card-header {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+
+    .btn {
+      width: 100%;
+      display: flex;
+      padding-left: 0;
+      padding-right: 0;
+      text-decoration: none;
+    }
+  }
+}
+
+.shopping-list {
+  display: none;
+  padding: 24px;
+  height: 742px;
+}
+
+.shopping-list__links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shopping-list__links-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.shopping-list__links-stamp {
+  background: url("../img/pers-acc/pers-acc-nutrition/shopping-list__links-stamp.svg") no-repeat center;
+  background-size: 100% auto;
+  margin-right: 16px;
+}
+
+.shopping-list__links-share {
+  background: url("../img/pers-acc/pers-acc-nutrition/shopping-list__links-share.svg") no-repeat center;
+  background-size: 100% auto;
+  margin-right: 16px;
+}
+
+.shopping-list__links-download {
+  background: url("../img/pers-acc/pers-acc-nutrition/shopping-list__links-download.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.shopping-list__table {
+  font-size: 14px;
+
+  th, td {
+    border: none !important;
+  }
+
+  .table th {
+    padding-bottom: 4px;
+  }
+
+  .table td {
+    padding-bottom: 0;
+    padding-top: 6px;
+  }
+
+  .table tr th:first-child {
+    width: 161px;
+  }
+
+  thead {
+    border-bottom: 4px solid rgba(203, 216, 255, 0.5);
+  }
+}
+
+.card-header__radio {
+  background: url("../img/pers-acc/pers-acc-nutrition/radio_button_checked.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 16px;
+}
+
+.card-header__arrow {
+  background: url("../img/pers-acc/pers-acc-nutrition/arrow_forward_ios.png") no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: auto;
+  transform: rotate(180deg);
+}
+
+.pers-acc-nutrition__main-block {
+  display: flex;
+  align-items: center;
+}
+
+.pers-acc-nutrition__main-table {
+  display: flex;
+}
+
+.table-nutrition__detailed-information {
+  width: 100%;
+}
+
+.table-nutrition__detailed-information-title {
+  display: none;
+}
+
+.table-nutrition-accordion__mobil {
+  display: none;
+}
+
+.btn.btn-link.collapsed {
+  .card-header__radio {
+    background: url("../img/pers-acc/pers-acc-nutrition/radio_button_unchecked.svg") no-repeat center;
+    background-size: 100% auto;
+  }
+
+  .card-header__arrow {
+    transform: rotate(0deg);
+  }
+}
+
+.accordion {
+  .table-nutrition-accordion__card {
+    .card-header {
+      border-top: 1px solid #D8D8D8;
+    }
+  }
+  .table-nutrition-accordion__card:first-child {
+    .card-header {
+      border-top: none;
+    }
+  }
+}
+
+.table-nutrition-accordion__info-block-bottom {
+  display: none;
+}
+
+@media (max-width: 1478px) {
+  .shopping-list {
+    width: 91%;
+  }
+}
+
+@media (max-width: 1389px) {
+  .shopping-list {
+    width: 100%;
+  }
+
+  .pers-acc-nutrition__main-container {
+    flex-direction: column;
+  }
+
+  .pers-acc-nutrition__table {
+    max-width: 1208px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .table-nutrition-accordion {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .pers-acc-nutrition__main-block {
+    flex-direction: column;
+  }
+
+  .pers-acc-nutrition__switch {
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+    margin-bottom: 23px;
+  }
+
+  .pers-acc-nutrition-navigation {
+    order: 2;
+  }
+
+  .table-nutrition__detailed-information {
+    padding-left: 94px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .container-fluid.pers-acc.pers-acc-nutrition {
+    padding-bottom: 50%;
+  }
+
+  .pers-acc-nutrition__main-table {
+    display: none;
+  }
+
+  .table-nutrition__detailed-information {
+    padding-left: 0;
+  }
+
+  .table-nutrition__detailed-information-title {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .table-nutrition-accordion__mobil {
+    display: block;
+  }
+
+  .table-nutrition-accordion {
+    max-height: 100%;
+  }
+
+  .table-nutrition-accordion__info-blocks {
+    flex-wrap: wrap;
+  }
+
+  .table-nutrition-accordion__info-block {
+    width: 49%;
+    margin-bottom: 4px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #accordionExample {
+    overflow: initial;
+  }
+
+  .pers-acc-nutrition__switch {
+    width: 328px;
+    height: 32px;
+
+    .button {
+      width: 328px;
+      height: 32px;
+    }
+  }
+
+  #button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span {
+    height: 32px;
+    width: 152px;
+  }
+
+  #button-10 .checkbox:checked + .knobs:before {
+    left: 175px;
+  }
+
+  .table-nutrition-accordion__info-block-bottom {
+    display: block;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 340px) {
+  .pers-acc-nutrition__switch {
+    width: 300px;
+    height: 32px;
+
+    .button {
+      width: 300px;
+      height: 32px;
+    }
+  }
+
+  #button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span {
+    height: 32px;
+    width: 150px;
+  }
+
+  #button-10 .checkbox:checked + .knobs:before {
+    left: 150px;
+  }
+}

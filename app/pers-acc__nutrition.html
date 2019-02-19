@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid pers-acc pers-acc-nutrition">
+    <div class="pers-acc__section-center">
+        <header class="pers-acc__header">
+            <div class="pers-acc__header-burger">
+                <div class="pers-acc__header-burger-line"></div>
+            </div>
+            <div class="pers-acc__header-logo">
+                <a href="" title=""></a>
+            </div>
+            <div class="pers-acc__header-block-info"><!--row-->
+                <div class="pers-acc__header-nav">
+                    <ul class="nav justify-content-between">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc-card.html">Карта</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pers-acc__nutrition.html">Конструктор питания</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc-card__workout.html">Тренировки</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc-profile.html">Профиль</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc__account-setup.html">Натсройки аккаунта</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pers-acc__header-info-acc-container"><!--col-5-->
+                    <div class="pers-acc__header-info-acc">
+                        <div class="pers-acc__header-info-acc-lives">
+                            <span class="pers-acc__header-info-acc-live pers-acc__header-info-acc-live-true"></span>
+                            <span class="pers-acc__header-info-acc-live pers-acc__header-info-acc-live-true"></span>
+                            <span class="pers-acc__header-info-acc-live pers-acc__header-info-acc-live-false"></span>
+                        </div>
+                        <div class="pers-acc__header-info-acc-name">
+                            <p>Елена Родионова</p>
+                            <a href="" class="pers-acc__header-info-acc-name-check"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="pers-acc__main pers-acc-nutrition__main">
+            <div class="mb-3 pers-acc-nutrition__main-block">
+                <div class="pers-acc-nutrition-navigation">
+                    <a class="pers-acc-nutrition-navigation__btn pers-acc-nutrition-navigation__btn-left" href=""></a>
+                    <div class="pers-acc-nutrition-navigation__text-date">
+                        <span>1 неделя</span>
+                        <span>24 Сен — 30 Сен 2018</span>
+                    </div>
+                    <a class="pers-acc-nutrition-navigation__btn pers-acc-nutrition-navigation__btn-right" href=""></a>
+                </div>
+
+                <div class="pers-acc-nutrition__switch">
+                    <div class="toggle-button-cover">
+                        <div class="button-cover">
+                            <div class="button b2" id="button-10">
+                                <input type="checkbox" class="checkbox pers-acc-nutrition__switch-checkbox">
+                                <div class="knobs">
+                                    <span>Конструктор</span>
+                                </div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pers-acc-nutrition__main-container">
+                <div class="pers-acc-nutrition__main-table">
+                    <div class="pers-acc-nutrition__title-name-column">
+                        <span class="pers-acc-nutrition__title-name-column-breakfast">Завтрак</span>
+                        <span class="pers-acc-nutrition__title-name-column-first-snack">Перекус #1</span>
+                        <span class="pers-acc-nutrition__title-name-column-lunch">Обед</span>
+                        <span class="pers-acc-nutrition__title-name-column-second-snack">Перекус #2</span>
+                        <span class="pers-acc-nutrition__title-name-column-dinner">Ужин</span>
+                        <span class="pers-acc-nutrition__title-name-column-statistic">Всего</span>
+                    </div>
+                    <table class="table table-borderless pers-acc-nutrition__table">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Понедельник</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Вторник</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Среда</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Четверг</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Пятница</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Суббота</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span>Воскресен</span>
+                                    <span>26 Sep 2018</span>
+                                </div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="pers-acc-nutrition__breakfast">
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Маффины из цукини</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pers-acc-nutrition__first-snack">
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pers-acc-nutrition__lunch">
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pers-acc-nutrition__second-snack">
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pers-acc-nutrition__dinner">
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container">
+                                    <p>Выбери Перекус</p>
+                                    <i class="pers-acc-nutrition__edit"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="pers-acc-nutrition__statistic">
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pers-acc-nutrition__table-td-container pers-acc-nutrition__total-stats">
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-calories">
+                                        <span>Ккал:</span>
+                                        <span>255</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-protein">
+                                        <span>Белок:</span>
+                                        <span>42</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-fats">
+                                        <span>Жиры:</span>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="pers-acc-nutrition__total-stats__block pers-acc-nutrition__total-stats-carbohydrates">
+                                        <span>Углеводы:</span>
+                                        <span>10</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-nutrition__detailed-information">
+                    <div class="table-nutrition-accordion">
+                        <p class="table-nutrition__detailed-information-title">Завтрак 1</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="card-header__radio"></i>
+                                            <span>Пышный омлет</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="table-nutrition-accordion__collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body table-nutrition-accordion__card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Энергетическая ценность на 250 гр: 175,8 ккал</b></p>
+                                        </div>
+                                        <div class="table-nutrition-accordion__info-blocks">
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingTwo">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="card-header__radio"></i>
+                                            <span>Маффины из цукини</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+                                    </h5>
+
+                                </div>
+                                <div id="collapseTwo" class="collapse table-nutrition-accordion__collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body table-nutrition-accordion__card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Энергетическая ценность на 250 гр: 175,8 ккал</b></p>
+                                        </div>
+                                        <div class="table-nutrition-accordion__info-blocks">
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="shopping-list" data-simplebar > <!--data-simplebar-->
+                            <div class="shopping-list__links">
+                                <a class="shopping-list__links-icon shopping-list__links-stamp" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-share" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-download" href=""></a>
+                            </div>
+                            <div class="shopping-list__table" data-mcs-theme="dark">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Овощи</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Огурец</td>
+                                        <td>2 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Морковь</td>
+                                        <td>1 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Цукини</td>
+                                        <td>4 шт</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Мясо</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Индейка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Говядина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Свинина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Бакалея</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Мука</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Черный перец</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Каши</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Овсянка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Гречка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Толокно</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-nutrition-accordion table-nutrition-accordion__mobil">
+                        <p class="table-nutrition__detailed-information-title">Перекус #1</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingOne">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="card-header__radio"></i>
+                                            <span>Йогурт</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+
+                                    </h5>
+
+                                </div>
+                                <div id="collapseOne" class="table-nutrition-accordion__collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingTwo">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="card-header__radio"></i>
+                                            <span>Яйца</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+                                    </h5>
+
+                                </div>
+                                <div id="collapseTwo" class="collapse table-nutrition-accordion__collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body table-nutrition-accordion__card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Энергетическая ценность на 250 гр: 175,8 ккал</b></p>
+                                        </div>
+                                        <div class="table-nutrition-accordion__info-blocks">
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="shopping-list">
+                            <div class="shopping-list__links">
+                                <a class="shopping-list__links-icon shopping-list__links-stamp" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-share" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-download" href=""></a>
+                            </div>
+                            <div class="shopping-list__table" data-mcs-theme="dark">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Овощи</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Огурец</td>
+                                        <td>2 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Морковь</td>
+                                        <td>1 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Цукини</td>
+                                        <td>4 шт</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Мясо</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Индейка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Говядина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Свинина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Бакалея</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Мука</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Черный перец</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Каши</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Овсянка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Гречка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Толокно</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-nutrition-accordion table-nutrition-accordion__mobil">
+                        <p class="table-nutrition__detailed-information-title">Перекус #1</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingOne">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="card-header__radio"></i>
+                                            <span>Йогурт</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+
+                                    </h5>
+
+                                </div>
+                                <div id="collapseOne" class="table-nutrition-accordion__collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingTwo">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="card-header__radio"></i>
+                                            <span>Яйца</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+                                    </h5>
+
+                                </div>
+                                <div id="collapseTwo" class="collapse table-nutrition-accordion__collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body table-nutrition-accordion__card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Энергетическая ценность на 250 гр: 175,8 ккал</b></p>
+                                        </div>
+                                        <div class="table-nutrition-accordion__info-blocks">
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="shopping-list">
+                            <div class="shopping-list__links">
+                                <a class="shopping-list__links-icon shopping-list__links-stamp" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-share" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-download" href=""></a>
+                            </div>
+                            <div class="shopping-list__table" data-mcs-theme="dark">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Овощи</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Огурец</td>
+                                        <td>2 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Морковь</td>
+                                        <td>1 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Цукини</td>
+                                        <td>4 шт</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Мясо</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Индейка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Говядина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Свинина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Бакалея</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Мука</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Черный перец</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Каши</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Овсянка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Гречка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Толокно</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-nutrition-accordion table-nutrition-accordion__mobil">
+                        <p class="table-nutrition__detailed-information-title">Перекус #1</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingOne">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="card-header__radio"></i>
+                                            <span>Йогурт</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+
+                                    </h5>
+
+                                </div>
+                                <div id="collapseOne" class="table-nutrition-accordion__collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingTwo">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="card-header__radio"></i>
+                                            <span>Яйца</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+                                    </h5>
+
+                                </div>
+                                <div id="collapseTwo" class="collapse table-nutrition-accordion__collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body table-nutrition-accordion__card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Энергетическая ценность на 250 гр: 175,8 ккал</b></p>
+                                        </div>
+                                        <div class="table-nutrition-accordion__info-blocks">
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="shopping-list">
+                            <div class="shopping-list__links">
+                                <a class="shopping-list__links-icon shopping-list__links-stamp" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-share" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-download" href=""></a>
+                            </div>
+                            <div class="shopping-list__table" data-mcs-theme="dark">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Овощи</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Огурец</td>
+                                        <td>2 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Морковь</td>
+                                        <td>1 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Цукини</td>
+                                        <td>4 шт</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Мясо</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Индейка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Говядина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Свинина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Бакалея</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Мука</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Черный перец</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Каши</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Овсянка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Гречка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Толокно</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-nutrition-accordion table-nutrition-accordion__mobil">
+                        <p class="table-nutrition__detailed-information-title">Перекус #1</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingOne">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="card-header__radio"></i>
+                                            <span>Йогурт</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+
+                                    </h5>
+
+                                </div>
+                                <div id="collapseOne" class="table-nutrition-accordion__collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card table-nutrition-accordion__card">
+                                <div class="card-header" id="headingTwo">
+
+                                    <h5 class="mb-0 w-100">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="card-header__radio"></i>
+                                            <span>Яйца</span>
+                                            <i class="card-header__arrow"></i>
+                                        </button>
+                                    </h5>
+
+                                </div>
+                                <div id="collapseTwo" class="collapse table-nutrition-accordion__collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body table-nutrition-accordion__card-body">
+                                        <img src="img/pers-acc/pers-acc-nutrition/table-nutrition-accordion__img.jpg" alt="">
+                                        <div class="table-nutrition-accordion__recipe-block">
+                                            <p><b>Ингридиенты:</b></p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Кабачки (цукини)</p>
+                                                <p>600 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Яйца</p>
+                                                <p>2 шт =110 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Мука цельнсозерновая</p>
+                                                <p>1/2 ст=100-80 г</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Чеснок</p>
+                                                <p>1 зубчик</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p>Соль, перец</p>
+                                                <p>по вкусу</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-nutrition-accordion__recipe-text">
+                                            <p class="mb-0"><b>Рецепт:</b></p>
+                                            <p>Цукини натереть на тёрке. Смешать в миске все ингредиенты. Формочки для маффинов чуть смазать каплей масла.
+                                                Запекать 25 минут при температуре 200*С.
+                                                Подавать с йогуртом.</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Энергетическая ценность на 250 гр: 175,8 ккал</b></p>
+                                        </div>
+                                        <div class="table-nutrition-accordion__info-blocks">
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="shopping-list">
+                            <div class="shopping-list__links">
+                                <a class="shopping-list__links-icon shopping-list__links-stamp" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-share" href=""></a>
+                                <a class="shopping-list__links-icon shopping-list__links-download" href=""></a>
+                            </div>
+                            <div class="shopping-list__table" data-mcs-theme="dark">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Овощи</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Огурец</td>
+                                        <td>2 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Морковь</td>
+                                        <td>1 шт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Цукини</td>
+                                        <td>4 шт</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Мясо</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Индейка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Говядина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Свинина</td>
+                                        <td>1 кг</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Бакалея</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Мука</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Черный перец</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Каши</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Овсянка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Гречка</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Толокно</td>
+                                        <td>500 гр</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-nutrition-accordion__info-block-bottom">
+                        <div class="table-nutrition-accordion__info-blocks">
+                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-calories"><span>К - 11,75 г</span></div>
+                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-protein"><span>Б - 11,75 г</span></div>
+                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-fats"><span>Ж - 11,75 г</span></div>
+                            <div class="table-nutrition-accordion__info-block table-nutrition-accordion__info-block-carbohydrates"><span>У - 11,75 г</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+<script src="js/pages/test.js"></script>
+
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.container-fluid.pers-acc.pers-acc-account-setup {
+  .form-group {
+    margin-bottom: 30px;
+  }
+}
+
+.pers-acc-profile__settings h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+.pers-acc-profile__settings-dob-span {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pers-acc-profile__select-block select {
+  height: 58px;
+  background: #3D4562;
+  color: #fff;
+  border: 1px solid #9EA2B0;
+
+  &:hover {
+    border: 1px solid #29ABFF;
+  }
+
+  &:focus {
+    background: #3D4562;
+    color: #ffffff;
+    box-shadow: none;
+    border-color: #9EA2B0;
+  }
+}
+
+.pers-acc-profile__select-block {
+  position: relative;
+}
+.pers-acc-profile__select-block:after {
+  content: "";
+  padding: 0 6px;
+  font-size: 12px;
+  position: absolute;
+  right: 12px;
+  top: 25px;
+  z-index: 1;
+  text-align: center;
+  min-width: 7px;
+  height: 5px;
+  pointer-events: none;
+  box-sizing: border-box;
+  color: #9EA2B0;
+  background: url("../img/pers-acc/ic_arrow_drop_down_24px.svg") no-repeat center;
+  background-size: 100% auto;
+}
+.pers-acc-profile__select-block select {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.switch-btn {
+  display: inline-block;
+  width: 34px;
+  height: 14px;
+  border-radius: 12px;
+  background: #72BC55;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+  margin-left: 20px;
+}
+
+.switch-btn::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 18px;
+  background: #fff;
+  top: -3px;
+  left: -6px;
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 1;
+}
+
+.switch-on::after {
+  left: 20px;
+  background: #118c4e;
+}
+
+.pers-acc-account-setup__notifications-switch {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
+
+.pers-acc-account-setup__notifications-text-bottom {
+  margin-top: 12px;
+  p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.5;
+  }
+}
+
+.pers-acc-account-setup__notifications-text-top {
+  p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+.form-group__nameForm:after,
+.form-group__nameForm.input-text:after {
+  content: 'Имя';
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+  width: 30px;
+  text-align: center;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.form-group__surnameForm:after,
+.form-group__surnameForm.input-text:after {
+  content: 'Фамилия';
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+  width: 60px;
+  text-align: center;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+
+.form-group__growthForm:after,
+.form-group__growthForm.input-text:after {
+  content: 'Рост, см';
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+  width: 56px;
+  text-align: center;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.form-group__programTypeForm:after,
+.form-group__programTypeForm.input-text:after {
+  content: 'Тип программы';
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+  width: 96px;
+  text-align: center;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.form-group__nutritionCategoryForm:after,
+.form-group__nutritionCategoryForm.input-text:after {
+  content: 'Категория питания';
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
+  width: 116px;
+  text-align: center;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.form-group:after {
+  opacity: 0 !important;
+}
+
+.form-group.active:after,
+.form-group.show:after{
+  opacity: 1 !important;
+}

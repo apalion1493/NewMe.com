@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="libs/fullpage.js/dist/fullpage.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid pers-acc pers-acc-profile">
+    <div class="pers-acc__section-center">
+        <header class="pers-acc__header">
+            <div class="pers-acc__header-burger">
+                <div class="pers-acc__header-burger-line"></div>
+            </div>
+            <div class="pers-acc__header-logo">
+                <a href="" title=""></a>
+            </div>
+            <div class="pers-acc__header-block-info"><!--row-->
+                <div class="pers-acc__header-nav">
+                    <ul class="nav justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pers-acc-card.html">Карта</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc__nutrition.html">Конструктор питания</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc-card__workout.html">Тренировки</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pers-acc-profile.html">Профиль</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pers-acc__account-setup.html">Натсройки аккаунта</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pers-acc__header-info-acc-container"><!--col-5-->
+                    <div class="pers-acc__header-info-acc">
+                        <div class="pers-acc__header-info-acc-lives">
+                            <span class="pers-acc__header-info-acc-live pers-acc__header-info-acc-live-true"></span>
+                            <span class="pers-acc__header-info-acc-live pers-acc__header-info-acc-live-true"></span>
+                            <span class="pers-acc__header-info-acc-live pers-acc__header-info-acc-live-false"></span>
+                        </div>
+                        <div class="pers-acc__header-info-acc-name">
+                            <p>Елена Родионова</p>
+                            <a href="" class="pers-acc__header-info-acc-name-exit"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="pers-acc__main pers-acc-profile__main">
+            <div class="row pers-acc-profile__training mb-5">
+                <div class="col-12">
+                    <div class="pers-acc-profile__training-title">
+                        <span>До начала тренировок</span>
+                        <p class="pers-acc-profile__prompt-green">Проведи актуальные замеры НАТОЩАК</p>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xl-4 col-lg-6 col-md-8">
+                    <form class="pers-acc-profile__form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__error-block form-group__weightForm1">
+                                    <input type="text" class="form-group__input form-control" id="weightForm1" aria-describedby="emailHelp" placeholder="Вес, кг" autocomplete="off">
+                                    <p class="form-group__error-text">текст</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__growthForm1">
+                                    <input type="text" class="form-group__input form-control" id="growthForm1" placeholder="Рост, см" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__widthMinForm1">
+                                    <input type="text" class="form-group__input form-control" id="widthMinForm1" aria-describedby="emailHelp" placeholder="Талия, см" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__widthMaxForm1">
+                                    <input type="text" class="form-group__input form-control" id="widthMaxForm1" placeholder="Живот, см" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__sizeMaxButtocksForm1">
+                                    <input type="text" class="form-group__input form-control" id="sizeMaxButtocksForm1" aria-describedby="emailHelp" placeholder="Ягодицы, кг" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__sizeUnderButtocksForm1">
+                                    <input type="text" class="form-group__input form-control" id="sizeUnderButtocksForm1" placeholder="Под ягодицами, см" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__leftHipForm1">
+                                    <input type="text" class="form-group__input form-control" id="leftHipForm1" aria-describedby="emailHelp" placeholder="Бедро левое, см" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__rightHipForm1">
+                                    <input type="text" class="form-group__input form-control" id="rightHipForm1" placeholder="Бедро правое, см" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="col-xl-6 col-md-12 ml-xl-5 mt-md-4 mt-xl-0">
+                    <div class="row">
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container">
+                                    <div>
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Спереди</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container">
+                                    <div class="">
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle%20Copy%202.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Сзади</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container">
+                                    <div class="">
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle%20Copy%203.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Сбоку</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row pers-acc-profile__training mb-5">
+                <div class="col-12">
+                    <div class="pers-acc-profile__training-title">
+                        <span>15 дней питания и тренировок</span>
+
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xl-4 col-lg-6 col-md-8">
+                    <form class="pers-acc-profile__form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__weightForm1">
+                                    <input type="text" class="form-group__input pers-acc-profile__input form-control" id="weightForm2" aria-describedby="emailHelp" placeholder="Вес, кг">
+                                </div>
+                            </div>
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__widthMinForm1">
+                                    <input type="text" class="form-group__input form-control" id="widthMinForm2" aria-describedby="emailHelp" placeholder="Талия, см">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__widthMaxForm1">
+                                    <input type="text" class="form-group__input form-control" id="widthMaxForm2" placeholder="Живот, см">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__sizeMaxButtocksForm1">
+                                    <input type="text" class="form-group__input form-control" id="sizeMaxButtocksForm2" aria-describedby="emailHelp" placeholder="Ягодицы, кг">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__sizeUnderButtocksForm1">
+                                    <input type="text" class="form-group__input form-control" id="sizeUnderButtocksForm2" placeholder="Под ягодицами, см">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__leftHipForm1">
+                                    <input type="text" class="form-group__input form-control" id="leftHipForm2" aria-describedby="emailHelp" placeholder="Бедро левое, см">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__rightHipForm1">
+                                    <input type="text" class="form-group__input form-control" id="rightHipForm2" placeholder="Бедро правое, см">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="col-xl-6 col-md-12 ml-xl-5 mt-md-4 mt-xl-0">
+                    <div class="row">
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container pers-acc-profile__photo-container-new">
+                                    <div>
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Спереди</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container pers-acc-profile__photo-container-new">
+                                    <div class="">
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle%20Copy%202.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Сзади</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container pers-acc-profile__photo-container-new">
+                                    <div class="">
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle%20Copy%203.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Сбоку</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row pers-acc-profile__training">
+                <div class="col-12">
+                    <div class="pers-acc-profile__training-title">
+                        <span>30 дней питания и тренировок</span>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xl-4 col-lg-6 col-md-8">
+                    <form class="pers-acc-profile__form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__weightForm1">
+                                    <input type="text" class="form-group__input pers-acc-profile__input form-control" id="weightForm3" aria-describedby="emailHelp" placeholder="Вес, кг" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__widthMinForm1">
+                                    <input type="text" class="form-group__input form-control" id="widthMinForm3" aria-describedby="emailHelp" placeholder="Талия, см" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__widthMaxForm1">
+                                    <input type="text" class="form-group__input form-control" id="widthMaxForm3" placeholder="Живот, см" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__sizeMaxButtocksForm1">
+                                    <input type="text" class="form-group__input form-control" id="sizeMaxButtocksForm3" aria-describedby="emailHelp" placeholder="Ягодицы, кг" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__sizeUnderButtocksForm1">
+                                    <input type="text" class="form-group__input form-control" id="sizeUnderButtocksForm3" placeholder="Под ягодицами, см" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__leftHipForm1">
+                                    <input type="text" class="form-group__input form-control" id="leftHipForm3" aria-describedby="emailHelp" placeholder="Бедро левое, см" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group__disabled form-group__rightHipForm1">
+                                    <input type="text" class="form-group__input form-control" id="rightHipForm3" placeholder="Бедро правое, см" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-md-12 ml-xl-5 mt-md-4 mt-xl-0">
+                    <div class="row">
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container pers-acc-profile__photo-container-blocked">
+                                    <div>
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Спереди</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container pers-acc-profile__photo-container-blocked">
+                                    <div class="">
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle%20Copy%202.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Сзади</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pers-acc-profile__photo-section">
+                            <div class="pers-acc-profile__photo-section-block">
+                                <div class="pers-acc-profile__photo-container pers-acc-profile__photo-container-blocked">
+                                    <div class="">
+                                        <img src="img/pers-acc/pers-acc-profile/Rectangle%20Copy%203.jpg" alt="">
+                                    </div> <!--bg-->
+                                    <div class="pers-acc-profile__photo-blocking">
+                                        <button type="button" class="btn pers-acc-profile__btn">Выбрать файл</button>
+                                        <span>Файл в формате jpg</span>
+                                    </div>
+                                </div>
+                                <p>Сбоку</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<!--<script src="libs/fullpage.js/vendors/scrolloverflow.min.js"></script>-->
+<!--<script src="libs/fullpage.js/dist/fullpage.min.js"></script>-->
+<!--<script src="js/libs.min.js"></script>-->
+<script src="js/pages/test.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+
+</body>
+</html>

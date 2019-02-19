@@ -1,0 +1,374 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.pers-acc__main {
+  padding-bottom: 100px;
+}
+
+.pers-acc-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(99px, 1fr));
+  grid-gap: 1vw;
+  justify-items: center;
+}
+
+.pers-acc-card__block {
+  width: 102px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px;
+  z-index: 1;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  & .pers-acc-card__block-training {
+    background: url("../img/pers-acc/pers-acc__main-img/fitness_center.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
+  span {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  &.pers-acc-card__block-opacity-20 {
+    background: rgba(42, 94, 254, 0.2);
+  }
+
+  &.pers-acc-card__block-opacity-30 {
+    background: rgba(42, 94, 254, 0.3);
+  }
+
+  &.pers-acc-card__block-opacity-40 {
+    background: rgba(42, 94, 254, 0.4);
+  }
+
+  &.pers-acc-card__block-opacity-50 {
+    background: rgba(42, 94, 254, 0.5);
+  }
+
+  &.pers-acc-card__block-opacity-60 {
+    background: rgba(42, 94, 254, 0.6);
+  }
+
+  &.pers-acc-card__block-opacity-70 {
+    background: rgba(42, 94, 254, 0.7);
+  }
+
+  &.pers-acc-card__block-opacity-80 {
+    background: rgba(42, 94, 254, 0.8);
+  }
+
+  &.pers-acc-card__block-opacity-90 {
+    background: rgba(42, 94, 254, 0.9);
+  }
+
+  &.pers-acc-card__block-opacity-100 {
+    background: rgba(42, 94, 254, 1);
+  }
+}
+
+.pers-acc-card__block-hollow {
+  border: 3px solid #2a5efe;
+  
+  span {
+    color: #2a5efe;
+  }
+
+  .pers-acc-card__block-training {
+    background: url("../img/pers-acc/pers-acc__main-img/ic_fitness_center.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+}
+
+.pers-acc-table-day {
+  border-radius: 16px;
+  border: 0.1px solid #333B5A;
+  overflow: hidden;
+}
+
+.pers-acc-table-day__header {
+  background-image: linear-gradient(to right, #04d7ff, #2a5efe);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-right: 10px;
+  span {
+    position: absolute;
+    font-size: 175px;
+    color: #ffffff;
+    font-weight: bold;
+    left: -35px;
+  }
+}
+
+.pers-acc-table-day__header-text {
+  color: #ffffff;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 180px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.pers-acc-table-day__form {
+  background: #ffffff;
+  padding: 16px 26px 50px 26px;
+
+  .form-group.form-check {
+    display: flex;
+    margin-right: auto;
+
+    span {
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 0;
+    }
+  }
+
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    margin: -5px 18px 0 0;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+    background: #ffffff;
+    border: 2px solid #304FFE;
+    border-radius: 2px;
+    position: relative;
+    top: 5px;
+  }
+
+  input[type=checkbox]:checked + label:before {
+    color: #fff;
+    background: #304FFE;
+  }
+
+  .form-group {
+    padding-left: 0;
+  }
+}
+
+.pers-acc-table-day__form-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .form-group {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #000;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+.pers-acc-table-day__form-block-first {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.pers-acc-table-day__form-block-second {
+  margin-top: 16px;
+  border-bottom: 1px solid #D8D8D8;
+  padding-bottom: 20px;
+}
+
+.pers-acc-table-day__form-bottom-block {
+  margin-top: 24px;
+}
+
+.pers-acc-table-day__form-text {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pers-acc-table-day__form-container {
+  margin-top: 20px;
+
+  .form-group {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  input[type=checkbox] + label:before {
+    top: 2px;
+  }
+}
+
+.form-check-label span {
+  padding-left: 50px;
+}
+
+.pers-acc-table-day__form-bottom-block .form-check-label:before {
+  top: 0 !important;
+}
+
+.pers-acc-table-day__form-block .pers-acc-table-day__form-btn-loading {
+  background-color: #2963FE;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.pers-acc-table-day__form-bottom-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button {
+    border-radius: 24px;
+    background-color: #2A5EFE;
+    font-size: 16px;
+    height: 48px;
+  }
+}
+
+.pers-acc-table-day__form-bottom-section-text {
+  p {
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (min-height: 870px) {
+  .container-fluid.pers-acc {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .pers-acc-table-day {
+    margin-top: 50px;
+  }
+
+  .pers-acc-card {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container-fluid.pers-acc {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .pers-acc__header-nav {
+    max-width: 668px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .pers-acc-table-day__form {
+    padding-left: 19px;
+    padding-right: 19px;
+
+  }
+
+  .pers-acc-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    grid-gap: 3vw;
+    justify-items: center;
+    align-items: end;
+  }
+
+  .pers-acc-card__block {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 16px;
+    z-index: 1;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    & .pers-acc-card__block-training {
+      background: url("../img/pers-acc/pers-acc__main-img/fitness_center.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+    }
+
+    span {
+      font-size: 32px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+
+  .pers-acc-table-day__form-block {
+    .pers-acc-table-day__form-btn-loading {
+      border-radius: 15px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1138.98px) {
+  .form-group__text-height {
+    height: 42px;
+  }
+}
+
+@media (max-width: 444px) {
+  .form-group__disappearing-text {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .pers-acc-table-day__form-block {
+    flex-direction: column;
+    .pers-acc-table-day__form-btn-loading {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+}

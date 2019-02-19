@@ -1,0 +1,237 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.container-fluid.pers-acc {
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
+}
+
+.pers-acc__section-center {
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pers-acc {
+  padding-top: 10px;
+  background: #333B5A;
+}
+
+.pers-acc__header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+
+  .row {
+    width: 100%;
+  }
+}
+
+.pers-acc__header-logo {
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+
+  a {
+    background: url("../img/pers-acc/pers-acc__header-img/pers-acc-logo.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 48px;
+    height: 48px;
+    display: block;
+  }
+}
+
+.pers-acc__header-block-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pers-acc__header-nav {
+  max-width: 750px;
+  width: 100%;
+
+  li a {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    position: relative;
+
+    .nav-link {
+      color: #ffffff;
+    }
+  }
+
+  .nav-item.active:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to left, #04D7FF, #2A5EFE);
+    width: 130%;
+    height: 2px;
+    left: -13%;
+  }
+}
+
+.pers-acc__header-info-acc {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.pers-acc__header-info-acc-lives {
+  display: flex;
+  margin-right: 36px;
+}
+
+.pers-acc__header-info-acc-live {
+  width: 24px;
+  height: 24px;
+}
+
+.pers-acc__header-info-acc-live-true {
+  background: url("../img/pers-acc/pers-acc__header-img/favorite.svg") no-repeat center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.pers-acc__header-info-acc-live-false {
+  background: url("../img/pers-acc/pers-acc__header-img/favorite_border.svg") no-repeat center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.pers-acc__header-info-acc-name {
+  display: flex;
+  align-items: center;
+  p {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+
+.pers-acc__header-info-acc-name-check {
+  background: url("../img/pers-acc/pers-acc__header-img/check_box.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 15px;
+}
+
+.pers-acc__header-info-acc-container {
+  display: flex;
+  align-items: center;
+}
+
+.pers-acc__header-burger {
+  display: none;
+  cursor: pointer;
+}
+
+.pers-acc__header-info-acc-name-exit {
+  background: url("../img/pers-acc/pers-acc__header-img/exit_to_app.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 15px;
+}
+
+@media (max-width: 1106px) {
+  .pers-acc__header {
+    padding-top: 10px;
+  }
+
+  .pers-acc__header-nav {
+    padding-top: 10px;
+    position: fixed;
+    background-color: #09153E;
+    width: 200px !important;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    left: -100%;
+    transition: 0.3s;
+    box-shadow: 0 4px 5px 0 rgba(11, 0, 43, 0.2), 0 3px 14px 3px rgba(11, 0, 43, 0.12), 0 8px 10px 1px rgba(11, 0, 43, 0.14);
+
+    ul {
+      flex-direction: column;
+    }
+
+    .nav-item.active:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to left, #04D7FF, #2A5EFE);
+      width: 100%;
+      height: 2px;
+      left: 0;
+    }
+  }
+
+  .pers-acc__header-nav.active {
+    left: 0;
+  }
+
+  .pers-acc__header-info-acc-container {
+    margin-left: auto;
+  }
+
+  .pers-acc__header-burger {
+    height: 24px;
+    display: flex;
+    align-items: center;
+
+    .pers-acc__header-burger-line {
+      width: 18px;
+      height: 3px;
+      position: relative;
+      background: #ffffff;
+      margin-right: 20px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 3px;
+        background: #ffffff;
+        bottom: 8px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 3px;
+        background: #ffffff;
+        top: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .pers-acc__header-info-acc-name {
+    p {
+      display: none;
+    }
+  }
+
+  .pers-acc__header-logo,
+  .pers-acc__header-info-acc-name-check {
+    display: none;
+  }
+
+  .pers-acc__header-info-acc-lives {
+    margin-right: 0;
+  }
+}

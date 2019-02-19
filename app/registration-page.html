@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-registration">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="top-main-menu">
+                    <div class="logo-center-top">
+                        <a href="index.html"></a>
+                    </div>
+                    <div class="top-main-menu__buttons">
+                        <button type="button" class="btn btn-outline-primary newme-btn-first-colo"><span>Выбрать программу</span></button>
+                    </div>
+                </div>
+                <div class="main-registration__bg"></div>
+                <div class="main-registration__form">
+                    <header class="main-registration__form-header">
+                        <span class="display-1">Регистрация</span>
+                        <div class="main-registration__form-header-social">
+                            <p class="main-registration__form-header-social-text">Зарегистрируйтесь через:</p>
+                            <div class="main-registration__form-header-social-links">
+                                <a class="main-registration__form-header-social-link main-registration__google-link" href=""></a>
+                                <a class="main-registration__form-header-social-link main-registration__fb-link" href=""></a>
+                                <a class="main-registration__form-header-social-link main-registration__vk-link" href=""></a>
+                            </div>
+                        </div>
+                    </header>
+                    <form class="main-registration__form-container">
+                        <div class="form-group main-registration__form-container-email form-group__error">
+                            <input type="email" class="form-control" id="new-me-reg-email" placeholder="Email">
+                            <span class="form-group__error-text">Текст ошибки</span>
+                        </div>
+
+                        <div class="form-group row main-registration__form-container-password">
+                            <div class="col-sm-6 main-registration__first-input">
+                                <input type="password" class="form-control" id="new-me-reg-password" placeholder="Придумайте пароль">
+                            </div>
+                            <div class="col-sm-6 main-registration__second-input">
+                                <input type="password" class="form-control" id="new-me-reg-passwordRepeat" placeholder="Подтвердите пароль">
+                            </div>
+                        </div>
+
+                        <div class="form-group main-registration__form-container-surname">
+                            <input type="text" class="form-control" placeholder="Фамилия">
+                        </div>
+
+                        <div class="form-group main-registration__form-container-name">
+                            <input type="text" class="form-control" placeholder="Имя">
+                        </div>
+
+                        <div class="form-group row main-registration__form-container-birthday">
+                            <span class="col-12">Дата рождения</span>
+                            <div class="col-sm-6 main-registration__first-input">
+                                <select class="form-control">
+                                    <option>Число, месяц</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 main-registration__second-input">
+                                <select class="form-control">
+                                    <option>Год</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group main-registration__checkbox">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label main-registration__text-check" for="gridCheck">
+                                    Регистрируясь в системе, я соглашаюсь с термс и кондишинс
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="main-registration__form-container-btn">
+                            <button type="button" class="btn btn-primary new-me-form-btn">Зарегистрироваться</button>
+                            <a href="">Войти</a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JAVASCRIPT ================================================== -->
+
+<!-- JS Global -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="js/pages/test.js"></script>
+
+<!-- JS Inline -->
+<script>
+    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
+
+</body>
+</html>

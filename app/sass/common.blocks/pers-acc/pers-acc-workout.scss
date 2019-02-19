@@ -1,0 +1,145 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.container-fluid.pers-acc.pers-acc-workout-page {
+  height: 100%;
+}
+
+.pers-acc-workout__container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.pers-acc-workout__container.blocked {
+  .pers-acc-workout__block {
+    opacity: 0.6;
+  }
+
+  .pers-acc-workout__block-blocked {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      position: relative;
+      top: 30px;
+    }
+  }
+}
+
+.pers-acc-workout__block {
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 5px 0 rgba(11, 0, 43, 0.2), 0 3px 14px 3px rgba(11, 0, 43, 0.12), 0 8px 10px 1px rgba(11, 0, 43, 0.14);
+}
+
+.pers-acc-workout__block-place {
+  width: 80px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  align-self: center;
+
+  span {
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  &.pers-acc-workout__block-place-gym {
+    background: #2A5EFE;
+  }
+
+  &.pers-acc-workout__block-place-home {
+    background: #7ED321;
+  }
+}
+
+.pers-acc-workout__block-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #2A5EFE;
+}
+
+.pers-acc-workout__block-content {
+  margin-top: 32px;
+  margin-bottom: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.pers-acc-workout__block-list {
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 0;
+    line-height: 22px;
+  }
+}
+
+.pers-acc-workout__block.blocked {
+  opacity: 0.6;
+}
+
+.pers-acc-workout__block-blocked {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+
+  .pers-acc-workout__block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .pers-acc-workout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pers-acc-workout__container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .pers-acc-workout__container.blocked .pers-acc-workout__block-content {
+    width: 100%;
+  }
+}
