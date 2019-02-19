@@ -645,7 +645,7 @@
 }
 
 .new-me-main-text__three {
-  margin-top: 116px;
+  margin-top: 113px;
   margin-bottom: 60px;
   p {
     font-size: 20px;
@@ -961,6 +961,10 @@
   .main-header__chief-title {
     background: #010528;
   }
+
+  .new-me-main-text__img-bg-first {
+    top: 7px;
+  }
 }
 
 @supports (-ms-ime-align: auto) {
@@ -971,16 +975,6 @@
   }
 }
 
-//.main-header,
-//.model-selection-section{
-//  background: #01072a;
-//  //background: #111634;
-//}
-//
-//.main-header__chief-title {
-//  background: #01072a;
-//  //background: #111634;
-//}
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
