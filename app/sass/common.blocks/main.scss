@@ -1197,7 +1197,7 @@
 
   @media (min-height: 650px) and (max-height: 719.98px) {
     .main-header__animation-human video {
-      max-width: 70%;
+      max-width: 63%;
       height: auto;
       margin-right: auto;
       display: block;
@@ -1222,17 +1222,28 @@
 
 
     .people-bg__first video {
-      max-width: 94%;
+      max-width: 84%;
     }
 
     .people-bg__second video {
-      max-width: 69%;
+      max-width: 62%;
     }
 
     .people-bg__three video {
-      max-width: 72%;
+      max-width: 64%;
+    }
+
+    .model-selection-section__slim-section-text,
+    .model-selection-section__fit-section-text,
+    .model-selection-section__gain-section-text {
+      font-size: 22px;
+    }
+
+    .model-selection-section__content-height {
+      margin-top: 0;
     }
   }
+
 
   @media (min-height: 720px) {
     .absolute-height {
