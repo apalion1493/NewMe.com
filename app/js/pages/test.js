@@ -30,6 +30,22 @@ $(document).ready(function() {
             $(this).parent().removeClass('show');
         }
     });
+
+    $( ".form-group" ).click(function() {
+        $(this).children().focus();
+    });
+
+    $( ".main-registration__first-input" ).click(function() {
+        $(this).children().focus();
+    });
+
+    $( ".main-registration__second-input" ).click(function() {
+        $(this).children().focus();
+    });
+
+
+
+
 });
 
 $(document).ready(function() {

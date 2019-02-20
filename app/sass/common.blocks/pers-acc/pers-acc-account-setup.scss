@@ -129,13 +129,12 @@
 .form-group__nameForm:after,
 .form-group__nameForm.input-text:after {
   content: 'Имя';
-  font-size: 12px;
   color: #ffffff;
   position: absolute;
-  left: 10px;
-  top: -8px;
-  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-  width: 30px;
+  top: 18px;
+  background: initial;
+  font-size: 14px;
+  left: 13px;
   text-align: center;
   transition: 0.2s;
   opacity: 1;
@@ -144,13 +143,12 @@
 .form-group__surnameForm:after,
 .form-group__surnameForm.input-text:after {
   content: 'Фамилия';
-  font-size: 12px;
   color: #ffffff;
   position: absolute;
-  left: 10px;
-  top: -8px;
-  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-  width: 60px;
+  top: 18px;
+  background: initial;
+  font-size: 14px;
+  left: 13px;
   text-align: center;
   transition: 0.2s;
   opacity: 1;
@@ -160,13 +158,12 @@
 .form-group__growthForm:after,
 .form-group__growthForm.input-text:after {
   content: 'Рост, см';
-  font-size: 12px;
   color: #ffffff;
   position: absolute;
-  left: 10px;
-  top: -8px;
-  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-  width: 56px;
+  top: 18px;
+  background: initial;
+  font-size: 14px;
+  left: 13px;
   text-align: center;
   transition: 0.2s;
   opacity: 1;
@@ -175,13 +172,12 @@
 .form-group__programTypeForm:after,
 .form-group__programTypeForm.input-text:after {
   content: 'Тип программы';
-  font-size: 12px;
   color: #ffffff;
   position: absolute;
-  left: 10px;
-  top: -8px;
-  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-  width: 96px;
+  top: 18px;
+  background: initial;
+  font-size: 14px;
+  left: 13px;
   text-align: center;
   transition: 0.2s;
   opacity: 1;
@@ -190,23 +186,24 @@
 .form-group__nutritionCategoryForm:after,
 .form-group__nutritionCategoryForm.input-text:after {
   content: 'Категория питания';
-  font-size: 12px;
   color: #ffffff;
   position: absolute;
-  left: 10px;
-  top: -8px;
-  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-  width: 116px;
+  top: 18px;
+  background: initial;
+  font-size: 14px;
+  left: 13px;
   text-align: center;
   transition: 0.2s;
   opacity: 1;
 }
 
-.form-group:after {
-  opacity: 0 !important;
-}
 
-.form-group.active:after,
-.form-group.show:after{
-  opacity: 1 !important;
-}
+
+//.form-group:after {
+//  opacity: 0 !important;
+//}
+//
+//.form-group.active:after,
+//.form-group.show:after{
+//  opacity: 1 !important;
+//}

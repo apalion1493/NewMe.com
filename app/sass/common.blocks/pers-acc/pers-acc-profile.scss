@@ -45,28 +45,27 @@
     border: 1px solid #9EA2B0;
     color: #fff;
     width: 100%;
-
-    &:hover {
-      border-color: #29ABFF;
-    }
   }
 
   .form-group {
     position: relative;
     height: 58px;
     margin-bottom: 50px;
+
+    &:hover input {
+      border-color: #29ABFF;
+    }
   }
 
   .form-group__weightForm1:after,
   .form-group__weightForm1.input-text:after {
     content: 'Вес';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 30px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -75,13 +74,12 @@
   .form-group__growthForm1:after,
   .form-group__growthForm1.input-text:after {
     content: 'Рост';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 35px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -90,13 +88,12 @@
   .form-group__widthMinForm1:after,
   .form-group__widthMinForm1.input-text:after {
     content: 'Талия';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 45px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -105,13 +102,12 @@
   .form-group__widthMaxForm1:after,
   .form-group__widthMaxForm1.input-text:after {
     content: 'Живот';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 45px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -120,13 +116,12 @@
   .form-group__sizeMaxButtocksForm1:after,
   .form-group__sizeMaxButtocksForm1.input-text:after {
     content: 'Ягодицы';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 60px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -135,13 +130,12 @@
   .form-group__sizeUnderButtocksForm1:after,
   .form-group__sizeUnderButtocksForm1.input-text:after {
     content: 'Под ягодицами';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 95px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -150,13 +144,12 @@
   .form-group__leftHipForm1:after,
   .form-group__leftHipForm1.input-text:after {
     content: 'Бедро левое';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 80px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -165,13 +158,12 @@
   .form-group__rightHipForm1:after,
   .form-group__rightHipForm1.input-text:after {
     content: 'Бедро правое';
-    font-size: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
-    top: -8px;
-    background: linear-gradient(to top, #3D4562 50%, #333B5A 51%);
-    width: 87px;
+    top: 18px;
+    background: initial;
+    font-size: 14px;
+    left: 13px;
     text-align: center;
     transition: 0.2s;
     opacity: 1;
@@ -241,7 +233,9 @@
 }
 
 .form-group__error-block {
-  input, input:hover, input:focus  {
+  & input,
+  &:hover input:hover,
+  & input:focus {
     border-color: #FF2976;
     color: #FF2976;
   }
@@ -308,7 +302,8 @@
   }
 }
 
-.pers-acc-profile .form-group__input:disabled {
+.pers-acc-profile .form-group__input:disabled,
+.pers-acc-profile .form-group__input:disabled:hover {
   background: #3D4562;
   border-color: #3D4562;
 }
@@ -378,6 +373,25 @@
   }
 }
 
+.pers-acc-profile__photo-container-img {
+  height: 100%;
+
+  img {
+    height: 100%;
+  }
+}
+
+.form-group.active:after,
+.form-group.input-text.show:after {
+  left: 10px !important;
+  top: -8px !important;
+  font-size: 12px !important;
+  transition: 0.2s !important;
+  background: linear-gradient(to top, #3D4562 50%, #333B5A 51%) !important;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 @-moz-document url-prefix() {
   .pers-acc-profile__form input {
     height: 54px;
@@ -409,12 +423,4 @@
   .pers-acc-profile__form input {
     width: 99.4%;
   }
-}
-
-.form-group:after {
-  opacity: 0;
-}
-
-.form-group.active:after {
-  opacity: 1;
 }
