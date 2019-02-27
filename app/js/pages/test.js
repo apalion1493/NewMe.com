@@ -42,10 +42,6 @@ $(document).ready(function() {
     $( ".main-registration__second-input" ).click(function() {
         $(this).children().focus();
     });
-
-
-
-
 });
 
 $(document).ready(function() {
@@ -89,16 +85,95 @@ $('.switch-btn').click(function(){
 });
 //////////
 
-$(window).width(function() {
+$(window).bind('resize', function(e)
+{
+    window.resizeEvt;
+    $(window).resize(function()
+    {
+        clearTimeout(window.resizeEvt);
+        window.resizeEvt = setTimeout(function()
+        {
+            if(document.documentElement.clientWidth < 991.98) {
+                console.log('123');
+                $(".main-header__animation-human video").remove();
+                $(".main-header__animation-human img").remove();
+                $(".main-header__animation-human svg").remove();
+                $('.main-header__animation-human').append('<img src="img/index-page/human-header.png" alt="Описание картинки">');
+            }
+
+            if(document.documentElement.clientWidth < 767.98) {
+                $(".main-header__animation-human video").remove();
+                $(".main-header__animation-human img").remove();
+                $('.main-header__animation-human').append('<img src="img/index-page/human-header-mobil.png" alt="">');
+
+                $('.new-me-main-text__first p').html('NEW ME — твой персональный помощник моделирования тела');
+
+                $('.new-me-main-text__second p').html('<p>Индивидуально подобранные:</p>' +
+                    '<ul><li>питание</li><li>тренировки</li><li>организация режима</li></ul>');
+            }
+
+            if (document.documentElement.clientWidth < 1199.98 && document.documentElement.clientWidth > 767.98 ) {
+                jQuery(document).ready(function(){
+                    $('.row.benefits-list.benefits-list__first').insertAfter('.test1');
+                    $('.row.benefits-list.benefits-list__second').insertAfter('.test2');
+                    $(".people-bg__first video").remove();
+                    $(".people-bg__first img").remove();
+                    $('.people-bg__first').append('<img src="img/index-page/first-piple-pln.svg" alt="">');
+                    $(".people-bg__second video").remove();
+                    $(".people-bg__second img").remove();
+                    $('.people-bg__second').append('<img src="img/index-page/second-people__pln.svg" alt="">');
+                    $(".people-bg__three video").remove();
+                    $(".people-bg__three img").remove();
+                    $('.people-bg__three').append('<img src="img/index-page/three-people__pln.svg" alt="">');
+                });
+            }
+
+            if(document.documentElement.clientWidth > 767.98) {
+                $('.new-me-main-text__first p').html('NEW ME — это твой персональный помощник по организации\n' +
+                    'твоего тела, который грамотно приведет тебя к желаемому результату\n' +
+                    'в соответствии с выбранной моделью питания и тренировок.');
+                $('.new-me-main-text__second p').html('<p>После выбора типа моделирования ты попадешь в свой личный кабинет, где в игровом и доступном формате пошагово получишь своевременные инструкции по прохождению квеста, который приведет тебя к максимальному результату за 30 дней. </p>');
+            }
+
+            if(document.documentElement.clientWidth > 992) {
+                console.log('123');
+                $(".main-header__animation-human img").remove();
+                anim = lottie.loadAnimation(params);
+            }
+
+            if(document.documentElement.clientWidth > 1200) {
+                $('.row.benefits-list.benefits-list__first').appendTo('.col-lg-6.col-md-6.col-xl-4.model-selection-section__height-col6.model-selection-section__slim-mobilNone');
+                $('.row.benefits-list.benefits-list__second').appendTo('.col-md-6.col-lg-2.model-selection-section__height-col6');
+                $(".people-bg__first img").remove();
+                $(".people-bg__first video").remove();
+                $('.people-bg__first').append('<video id="videoSlim" muted="muted">\n' +
+                    '<source src="animations/2_slim.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->\n' +
+                    '<source src="animations/2_slim.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->\n' +
+                    '</video>');
+                $(".people-bg__second img").remove();
+                $(".people-bg__second video").remove();
+                $('.people-bg__second').append('<video id="videoFit" muted="muted">\n' +
+                    '<source src="animations/3_fit.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->\n' +
+                    '<source src="animations/3_fit.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->\n' +
+                    '</video>');
+                $(".people-bg__three img").remove();
+                $(".people-bg__three video").remove();
+                $('.people-bg__three').append('<video id="videoGain" muted="muted">\n' +
+                    '<source src="animations/4_gain.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->\n' +
+                    '<source src="animations/4_gain.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->\n' +
+                    '</video>');
+            }
+
+        }, 100);
+    });
+});
+
+$(document).ready(function () {
     if(document.documentElement.clientWidth < 991.98) {
         $(".main-header__animation-human video").remove();
         $(".main-header__animation-human img").remove();
+        $(".main-header__animation-human svg").remove();
         $('.main-header__animation-human').append('<img src="img/index-page/human-header.png" alt="Описание картинки">');
-
-        $('.new-me-main-text__first p').html('NEW ME — твой персональный помощник моделирования тела');
-
-        $('.new-me-main-text__second p').html('<p>Индивидуально подобранные:</p>' +
-            '<ul><li>питание</li><li>тренировки</li><li>организация режима</li></ul>');
     }
 
     if(document.documentElement.clientWidth < 767.98) {
@@ -125,6 +200,7 @@ $(window).width(function() {
         });
     }
 });
+//
 
 $(document).ready(function () {
 
@@ -170,4 +246,5 @@ $(document).ready(function() {
         section : ".scroll-full",
     });
 });
+
 

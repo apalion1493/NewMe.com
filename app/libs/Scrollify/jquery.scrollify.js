@@ -78,7 +78,7 @@ if (mql.matches) {
             wheelEvent = 'onwheel' in document ? 'wheel' : document.onmousewheel !== undefined ? 'mousewheel' : 'DOMMouseScroll',
             settings = {
                 //section should be an identifier that is the same for each section
-                section: "section",
+                section: ".scroll-full",
                 sectionName: "section-name",
                 interstitialSection: "",
                 easing: "easeOutExpo",
