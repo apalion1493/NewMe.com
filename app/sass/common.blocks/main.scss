@@ -2623,4 +2623,14 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .model-selection-section {
     background: #010231;
   }
+
+  .main-header {
+    background: radial-gradient(1026.00px at 61.18% 24.55%, #1E3266 0%, #00072A 100%);
+  }
+
+  .main-header__chief-title {
+    background-blend-mode: overlay;
+    background: linear-gradient(53.45deg, rgba(0, 7, 42, 0.7) -13.28%, rgba(30, 50, 102, 0.7) 90.89%);
+    box-shadow: 3px 2px 66px #040744;
+  }
 }
