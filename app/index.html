@@ -29,10 +29,10 @@
                         <div class="" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link second-slide" href="#" >Программы</a>
+                                    <a class="nav-link second-slide" href="#program-selection" >Программы</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link three-slide" href="#">О проекте</a>
+                                    <a class="nav-link three-slide" href="#about-project">О проекте</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Блог</a>
@@ -80,7 +80,7 @@
 
             </div>
         </div>
-        <a href="#" class="main-header__arrow"></a>
+        <a href="#program-selection" class="main-header__arrow"></a>
     </div>
 </section>
 <section id="program-selection" class="scroll-full model-selection-section absolute-height" data-div-name="second">
@@ -353,8 +353,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script type="text/javascript" src="libs/Scrollify/jquery.scrollify.js"></script>
-<script type="text/javascript" src="js/animation/first-human.js"></script>
 <script type="text/javascript" src="js/pages/test.js"></script>
 
 
@@ -366,11 +364,16 @@
     // $.scrollify({
     //     section : "section"
     // });
+</script>
+
+<script type="text/javascript" src="libs/Scrollify/jquery.scrollify.js"></script>
+<script>
 
     $(function() {
         $.scrollify({
             section : ".scroll-full",
-            sectionName : "test"
+            sectionName : "test",
+            touchScroll: true
         });
     });
 
@@ -386,7 +389,5 @@
         $.scrollify.next();
     });
 </script>
-
-
 </body>
 </html>

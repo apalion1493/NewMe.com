@@ -56,6 +56,10 @@ $(document).ready(function() {
     $(".main-header__mob-menuClose").click(function() {
         $(".top-main-menu__items").removeClass("active");
     });
+
+    $("#navbarSupportedContent .nav-item").click(function() {
+        $(".top-main-menu__items").removeClass("active");
+    });
 });
 
 jQuery(function($){
@@ -67,13 +71,13 @@ jQuery(function($){
         }
     });
 
-    $(document).mouseup(function (e){
-        var div = $(".top-main-menu__items");
-        if (!div.is(e.target)
-            && div.has(e.target).length === 0) {
-            $(".top-main-menu__items").removeClass("active");
-        }
-    });
+    // $(document).mouseup(function (e){
+    //     var div = $(".top-main-menu__items");
+    //     if (!div.is(e.target)
+    //         && div.has(e.target).length === 0) {
+    //         $(".top-main-menu__items").removeClass("active");
+    //     }
+    // });
 });
 
 /////////// кнопка на странице настойки акк
@@ -133,10 +137,6 @@ $(window).bind('resize', function(e)
                     'в соответствии с выбранной моделью питания и тренировок.');
                 $('.new-me-main-text__second p').html('<p>После выбора типа моделирования ты попадешь в свой личный кабинет, где в игровом и доступном формате пошагово получишь своевременные инструкции по прохождению квеста, который приведет тебя к максимальному результату за 30 дней. </p>');
             }
-
-            // if(document.documentElement.clientWidth > 992) {
-            //
-            // }
 
             if(document.documentElement.clientWidth > 1200) {
                 $(".main-header__animation-human img").remove();
@@ -202,33 +202,36 @@ $(document).ready(function () {
     });
 });
 
-vid1 = document.getElementById('mainVideo');
+// vid1 = document.getElementById('mainVideo');
+//
+// vid1.addEventListener('mouseenter', function() {
+//     vid1.play();
+// });
+//
+// vid2 = document.getElementById('videoSlim');
+//
+// vid2.addEventListener('mouseenter', function() {
+//     vid2.play();
+// });
+//
+// vid3 = document.getElementById('videoFit');
+//
+// vid3.addEventListener('mouseenter', function() {
+//     vid3.play();
+// });
+//
+// vid4 = document.getElementById('videoGain');
+//
+// vid4.addEventListener('mouseenter', function() {
+//     vid4.play();
+// });
 
-vid1.addEventListener('mouseenter', function() {
-    vid1.play();
-});
-
-vid2 = document.getElementById('videoSlim');
-
-vid2.addEventListener('mouseenter', function() {
-    vid2.play();
-});
-
-vid3 = document.getElementById('videoFit');
-
-vid3.addEventListener('mouseenter', function() {
-    vid3.play();
-});
-
-vid4 = document.getElementById('videoGain');
-
-vid4.addEventListener('mouseenter', function() {
-    vid4.play();
-});
-
-$(document).ready(function() {
-    $.scrollify({
-        section : ".scroll-full",
+$(document).ready(function(){
+    $(".main-header").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
     });
 });
 
