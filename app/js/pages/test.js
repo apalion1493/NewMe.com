@@ -48,11 +48,13 @@ $(document).ready(function() {
     $(".pers-acc__header-burger").click(function() {
         $(".pers-acc__header-nav").addClass("active");
     });
-});
 
-$(document).ready(function() {
     $(".top-main-menu__burger").click(function() {
         $(".top-main-menu__items").addClass("active");
+    });
+
+    $(".main-header__mob-menuClose").click(function() {
+        $(".top-main-menu__items").removeClass("active");
     });
 });
 
@@ -95,13 +97,13 @@ $(window).bind('resize', function(e)
         {
             if(document.documentElement.clientWidth < 1199.98) {
                 $(".main-header__animation-human img").remove();
-                $('.main-header__animation-human').append('<img src="img/index-page/human-header.png" alt="Описание картинки">');
+                $('.main-header__animation-human').append('<img src="img/index-page/human-bg.svg" alt="Описание картинки">');
             }
 
             if(document.documentElement.clientWidth < 767.98) {
                 //$(".main-header__animation-human video").remove();
                 $(".main-header__animation-human img").remove();
-                $('.main-header__animation-human').append('<img src="img/index-page/human-header-mobil.png" alt="">');
+                $('.main-header__animation-human').append('<img src="img/index-page/human-header-mobil.svg" alt="">');
 
                 $('.new-me-main-text__first p').html('NEW ME — твой персональный помощник моделирования тела');
 
@@ -115,13 +117,13 @@ $(window).bind('resize', function(e)
                     $('.row.benefits-list.benefits-list__second').insertAfter('.test2');
                     // $(".people-bg__first video").remove();
                     $(".people-bg__first img").remove();
-                    $('.people-bg__first').append('<img src="img/index-page/first-piple-pln.svg" alt="">');
+                    $('.people-bg__first').append('<img src="img/index-page/first-piple.svg" alt="">');
                     //$(".people-bg__second video").remove();
                     $(".people-bg__second img").remove();
-                    $('.people-bg__second').append('<img src="img/index-page/second-people__pln.svg" alt="">');
+                    $('.people-bg__second').append('<img src="img/index-page/second-people.svg" alt="">');
                     //$(".people-bg__three video").remove();
                     $(".people-bg__three img").remove();
-                    $('.people-bg__three').append('<img src="img/index-page/three-people__pln.svg" alt="">');
+                    $('.people-bg__three').append('<img src="img/index-page/three-people.svg" alt="">');
                 });
             }
 
@@ -159,12 +161,12 @@ $(window).bind('resize', function(e)
 $(document).ready(function () {
     if(document.documentElement.clientWidth < 991.98) {
         $(".main-header__animation-human img").remove();
-        $('.main-header__animation-human').append('<img src="img/index-page/human-header.png" alt="Описание картинки">');
+        $('.main-header__animation-human').append('<img src="img/index-page/human-bg.svg" alt="Описание картинки">');
     }
 
     if(document.documentElement.clientWidth < 767.98) {
         $(".main-header__animation-human img").remove();
-        $('.main-header__animation-human').append('<img src="img/index-page/human-header-mobil.png" alt="">');
+        $('.main-header__animation-human').append('<img src="img/index-page/human-header-mobil.svg" alt="">');
         $('.new-me-main-text__first p').html('NEW ME — твой персональный помощник моделирования тела');
         $('.new-me-main-text__second p').html('<p>Индивидуально подобранные:</p>' +
             '<ul><li>питание</li><li>тренировки</li><li>организация режима</li></ul>');
@@ -175,11 +177,11 @@ $(document).ready(function () {
             $('.row.benefits-list.benefits-list__first').insertAfter('.test1');
             $('.row.benefits-list.benefits-list__second').insertAfter('.test2');
             $(".people-bg__first img").remove();
-            $('.people-bg__first').append('<img src="img/index-page/first-piple-pln.svg" alt="">');
+            $('.people-bg__first').append('<img src="img/index-page/first-piple.svg" alt="">');
             $(".people-bg__second img").remove();
-            $('.people-bg__second').append('<img src="img/index-page/second-people__pln.svg" alt="">');
+            $('.people-bg__second').append('<img src="img/index-page/second-people.svg" alt="">');
             $(".people-bg__three img").remove();
-            $('.people-bg__three').append('<img src="img/index-page/three-people__pln.svg" alt="">');
+            $('.people-bg__three').append('<img src="img/index-page/three-people.svg" alt="">');
         });
     }
 });
