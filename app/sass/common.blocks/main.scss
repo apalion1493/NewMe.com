@@ -2162,6 +2162,10 @@
     padding-top: 24px;
     background: #00072A;
     width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    overflow-y: scroll;
   }
 
   .top-main-menu {
