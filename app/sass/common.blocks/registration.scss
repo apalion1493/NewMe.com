@@ -157,6 +157,8 @@
   }
 }
 
+
+
 .main-registration__form-container-email {
   position: relative;
 
@@ -433,6 +435,26 @@
   transition: 0.2s !important;
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.main-registration__button {
+  button {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .main-registration__button {
+    form {
+      margin-left: auto;
+    }
+
+    button {
+      margin-right: 0 !important;
+    }
+  }
 }
 
 @media (max-width: 575.98px) {

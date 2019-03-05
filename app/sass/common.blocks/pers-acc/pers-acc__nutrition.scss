@@ -214,7 +214,7 @@
     top: 0;
     bottom: 0;
     width: 100px;
-    right: -86px;
+    right: -89px;
     z-index: 0;
     background: #ffffff;
     border-top-right-radius: 16px;
@@ -239,6 +239,7 @@
     position: relative;
     padding-bottom: 0;
     padding-left: 5px !important;
+    background: #F6F6F6;
 
     p {
       margin-bottom: 0;
@@ -246,7 +247,6 @@
 
     &:hover {
       background: rgba(42, 94, 254, 0.22);
-      position: relative;
       z-index: 10;
     }
   }
@@ -308,9 +308,14 @@
   background: #7ed321;
 }
 
-.pers-acc-nutrition__statistic td:hover {
+.pers-acc-nutrition__statistic td {
   background: inherit;
+
+  &:hover {
+    background: inherit;
+  }
 }
+
 
 .table-nutrition-accordion {
   position: relative;
