@@ -118,7 +118,7 @@
 }
 
 .pers-acc__header-info-acc-name-check {
-  background: url("../img/pers-acc/pers-acc__header-img/check_box.svg") no-repeat center;
+  background: url("../img/pers-acc/pers-acc__header-img/exit_to_app.svg") no-repeat center;
   background-size: 100% auto;
   width: 24px;
   height: 24px;
@@ -145,7 +145,59 @@
   margin-left: 15px;
 }
 
+.pers-acc__header-logo.pers-acc__header-logo-mobil {
+  display: none;
+}
+
+.pers-acc__header-info-acc-name-mobil {
+  display: none;
+}
+
 @media (max-width: 1106px) {
+
+  .pers-acc__header-info-acc-lives {
+    margin-right: 0;
+  }
+
+  .pers-acc__header-info-acc-name-desktop {
+    display: none;
+  }
+
+  .pers-acc__header-info-acc-name.pers-acc__header-info-acc-name-mobil {
+    display: flex ;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    p {
+      margin-left: auto;
+    }
+
+    a {
+      margin-right: auto;
+    }
+  }
+
+
+  .pers-acc__header-logo.pers-acc__header-logo-desktop {
+    display: none;
+  }
+
+  .pers-acc__header-logo.pers-acc__header-logo-mobil {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+     a {
+       margin-left: auto;
+       margin-right: auto;
+     }
+  }
+
+  .pers-acc__header-nav li a {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
   .pers-acc__header {
     padding-top: 10px;
   }
@@ -153,8 +205,8 @@
   .pers-acc__header-nav {
     padding-top: 10px;
     position: fixed;
-    background-color: #09153E;
-    width: 200px !important;
+    background-color: #00072A;
+    width: 400px !important;
     height: 100vh;
     top: 0;
     bottom: 0;
@@ -165,12 +217,16 @@
 
     ul {
       flex-direction: column;
+      text-align: center;
+      width: 220px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .nav-item.active:before {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: 25px;
       background: linear-gradient(to left, #04D7FF, #2A5EFE);
       width: 100%;
       height: 2px;
@@ -217,19 +273,65 @@
       }
     }
   }
+
+  .main-header__mob-menuClose.main-header__mob-menuClose-pers-acc {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+
+    .main-header__mob-menuClose-icon {
+      background: url("../img/index-page/close.svg") no-repeat center;
+      background-size: 100% auto;
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
-@media (max-width: 425px) {
-  .pers-acc__header-info-acc-name {
-    p {
-      display: none;
+@media (max-width: 767.98px) {
+
+  .pers-acc__header-nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-top: 24px;
+    overflow-y: scroll;
+
+    ul {
+      max-width: 275px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    li {
+      a {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 24px;
+      }
     }
   }
 
-  .pers-acc__header-logo,
-  .pers-acc__header-info-acc-name-check {
-    display: none;
+  .pers-acc__header-nav .nav-item.active:before {
+    bottom: 45px;
   }
+
+  .pers-acc__header-logo.pers-acc__header-logo-mobil {
+    margin-bottom: 40px;
+  }
+
+  .pers-acc__header-logo a {
+    width: 83px;
+    height: 83px;
+  }
+
+}
+
+@media (max-width: 425px) {
 
   .pers-acc__header-info-acc-lives {
     margin-right: 0;

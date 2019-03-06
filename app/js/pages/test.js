@@ -55,6 +55,7 @@ $(document).ready(function() {
 
     $(".main-header__mob-menuClose").click(function() {
         $(".top-main-menu__items").removeClass("active");
+        $(".pers-acc__header-nav").removeClass("active");
     });
 
     $("#navbarSupportedContent .nav-item").click(function() {
@@ -105,7 +106,6 @@ $(window).bind('resize', function(e)
             }
 
             if(document.documentElement.clientWidth < 767.98) {
-                //$(".main-header__animation-human video").remove();
                 $(".main-header__animation-human img").remove();
                 $('.main-header__animation-human').append('<img src="img/index-page/human-header-mobil.svg" alt="">');
 
@@ -119,6 +119,7 @@ $(window).bind('resize', function(e)
                 jQuery(document).ready(function(){
                     $('.row.benefits-list.benefits-list__first').insertAfter('.test1');
                     $('.row.benefits-list.benefits-list__second').insertAfter('.test2');
+                    $('.row.benefits-list.benefits-list__three').insertAfter('.test3');
                     // $(".people-bg__first video").remove();
                     $(".people-bg__first img").remove();
                     $('.people-bg__first').append('<img src="img/index-page/first-piple.svg" alt="">');
@@ -143,6 +144,7 @@ $(window).bind('resize', function(e)
                 $(".main-header__animation-human").append('<img src="img/index-page/human-bg.svg" alt="">');
                 $('.row.benefits-list.benefits-list__first').appendTo('.col-lg-6.col-md-6.col-xl-4.model-selection-section__height-col6.model-selection-section__slim-mobilNone');
                 $('.row.benefits-list.benefits-list__second').appendTo('.col-md-6.col-lg-2.model-selection-section__height-col6');
+                $('.row.benefits-list.benefits-list__three').appendTo('.col-lg-2.test-class');
                 $(".people-bg__first img").remove();
                 //$(".people-bg__first video").remove();
                 $('.people-bg__first').append('<img src="img/index-page/first-piple.svg" alt="Описание картинки">');
@@ -176,6 +178,7 @@ $(document).ready(function () {
         jQuery(document).ready(function(){
             $('.row.benefits-list.benefits-list__first').insertAfter('.test1');
             $('.row.benefits-list.benefits-list__second').insertAfter('.test2');
+            $('.row.benefits-list.benefits-list__three').insertAfter('.test3');
             $(".people-bg__first img").remove();
             $('.people-bg__first').append('<img src="img/index-page/first-piple.svg" alt="">');
             $(".people-bg__second img").remove();

@@ -64,6 +64,19 @@
   }
 }
 
+.entry-page-container__button {
+  form {
+    margin-left: auto;
+
+    button {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
   .entry-page-container {
     .btn.newme-btn-first-colo {

@@ -479,6 +479,15 @@
     margin-top: 30px;
   }
 
+  .main-registration__button {
+    button {
+      margin-left: auto;
+      margin-right: auto !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
 }
 
 @media (max-width: 425.98px) {

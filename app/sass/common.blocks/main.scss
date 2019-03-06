@@ -562,6 +562,7 @@
 .people-bg__three {
   top: auto;
   bottom: 0;
+  right: 260px;
 
   img {
     margin-left: auto;
@@ -1003,6 +1004,10 @@
   .row {
     height: 100%;
   }
+
+  .benefits-list__three.row {
+    height: auto;
+  }
 }
 
 .model-selection-section__height-col6 {
@@ -1059,7 +1064,7 @@
   }
 
   .people-bg__three img {
-    max-width: 115%;
+    max-width: 155%;
   }
 
   .new-me-main-text__img-bg-first {
@@ -1217,10 +1222,6 @@
     }
   }
 
-  .model-selection-section__gain-section-text {
-    margin-bottom: 300px;
-  }
-
   .people-bg__three {
     top: auto;
     bottom: -70px;
@@ -1237,6 +1238,11 @@
     line-height: 19px;
     position: relative;
     z-index: 10;
+  }
+
+  .benefits-list__three {
+    margin-bottom: 100px;
+
   }
 
 }
@@ -1797,7 +1803,6 @@
   .model-selection-section__gain-section-text {
     width: 400px;
     display: block;
-    margin-bottom: 400px;
     position: relative;
     z-index: 10;
     font-size: 20px;
@@ -1806,7 +1811,8 @@
 
   .people-bg__three {
     top: auto;
-    left: -300px;
+    left: 0;
+    right: auto;
     bottom: -68px;
   }
 
@@ -1948,7 +1954,17 @@
   }
 
   .people-bg__three img {
-    max-width: 100%;
+    max-width: 170%;
+  }
+
+  .people-bg__three {
+    right: 0;
+    width: 100%;
+    left: -100px;
+  }
+
+  .benefits-list__three {
+    margin-bottom: 200px;
   }
 
 }
@@ -1956,6 +1972,11 @@
 @media (max-width: 1199.98px) {
   .model-selection-section__slim-mobilNone {
     display: none;
+  }
+
+  .people-bg__three {
+    right: 0;
+    width: 100%;
   }
 }
 
