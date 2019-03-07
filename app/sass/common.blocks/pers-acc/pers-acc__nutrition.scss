@@ -618,6 +618,8 @@
 
   .table-nutrition__detailed-information {
     background: initial;
+    width: 91%;
+    margin-left: auto;
   }
 
   .pers-acc-nutrition__table {
@@ -634,6 +636,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .table-nutrition__detailed-information {
+    width: 90.5%;
+  }
+}
+
 @media (max-width: 1060px) {
   .container-fluid.pers-acc.pers-acc-nutrition {
     padding-bottom: 50%;
@@ -645,6 +653,7 @@
 
   .table-nutrition__detailed-information {
     padding-left: 0;
+    width: 100%;
   }
 
   .table-nutrition__detailed-information-title {
