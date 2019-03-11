@@ -163,7 +163,7 @@
     text-align: center;
     vertical-align: middle;
     transition: color ease .3s;
-    background: url("../../../img/pers-acc/check_box_outline_blank.svg") no-repeat center;
+    background: url("../img/pers-acc/check_box_outline_blank.svg") no-repeat center;
     background-size: 100% auto;
     position: relative;
     top: 5px;
@@ -171,7 +171,7 @@
 
   input[type=checkbox]:checked + label:before {
     color: #fff;
-    background: url("../../../img/pers-acc/check_box.svg") no-repeat center;
+    background: url("../img/pers-acc/check_box.svg") no-repeat center;
     background-size: 100% auto;
   }
 
