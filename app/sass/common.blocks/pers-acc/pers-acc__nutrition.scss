@@ -569,7 +569,7 @@
 }
 
 .table-nutrition-accordion__collapse {
-  //height: 616px;
+  height: 616px;
   overflow-y: scroll;
 }
 
@@ -580,6 +580,7 @@
 }
 
 @media (max-width: 1389px) {
+
   .shopping-list {
     width: 100%;
   }
