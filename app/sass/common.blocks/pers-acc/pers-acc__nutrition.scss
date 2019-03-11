@@ -507,7 +507,7 @@
 }
 
 .card-header__arrow {
-  background: url("../img/pers-acc/pers-acc-nutrition/arrow_forward_ios.png") no-repeat center;
+  background: url("../img/pers-acc/pers-acc-nutrition/arrow_forward_ios.svg") no-repeat center;
   background-size: 100% auto;
   width: 24px;
   height: 24px;
@@ -569,7 +569,7 @@
 }
 
 .table-nutrition-accordion__collapse {
-  height: 616px;
+  //height: 616px;
   overflow-y: scroll;
 }
 
@@ -740,4 +740,3 @@
     left: 150px;
   }
 }
-
